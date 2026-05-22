@@ -1,49 +1,50 @@
-#  Movie Data Analysis (Python)
-
-This project analyzes popular movies using data from The Movie Database (TMDb) API.
-
-##  Note
-API key is not included for security reasons.
+# 📊 Sales Analysis Project (Python + Pandas)
 
 ##  Overview
-The script retrieves real-time movie data, processes it using Python, and generates insights based on movie ratings.
+This project performs an exploratory data analysis (EDA) on a sales dataset.  
+It includes data cleaning, aggregation, and visualization of key business metrics.
 
-##  Technologies
+---
+
+##  Project Structure
+
+---
+
+##  Features
+- Load and clean sales dataset
+- Convert date columns for time analysis
+- Calculate:
+  - Total sales
+  - Sales by month
+  - Sales by category
+  - Top 10 products
+  - Profit by category
+- Generate visualizations automatically
+- Save charts as images
+
+---
+
+##  Visualizations
+The project generates the following charts:
+
+- Sales by Month  
+- Sales by Category  
+- Top 10 Products  
+- Profit by Category  
+
+(All saved in the `images/` folder)
+
+---
+
+## 🛠 Technologies Used
 - Python
-- Requests
 - Pandas
 - Matplotlib
 
-##  Features
-- Fetches popular movies from an external API
-- Cleans and processes data using pandas
-- Filters movies based on rating (> 7)
-- Generates visualizations of top-rated movies
-- Exports results to a CSV file
+---
 
 ##  How to Run
 
-1. Install dependencies:
-```
-pip install -r requirements.txt
-```
-
-1. Run the script:
-```
-python main.py
-```
-
-##  Output
-- CSV file with movie data
-- Bar chart showing top-rated movies
-
-##  What I Learned
-- Working with APIs in Python
-- Data cleaning and analysis using pandas
-- Basic data visualization
-- Handling real-world data
-
-##  Future Improvements
-- Add more advanced visualizations
-- Improve data filtering and analysis
-- Integrate with dashboards (e.g., Power BI)
+```bash
+pip install pandas matplotlib
+python sales_analysis.py
